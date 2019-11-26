@@ -1,0 +1,32 @@
+
+.profil-right-bar {
+  width: 50px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 110vw;
+}
+.profil-right-bar-top {
+  width: 50px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profil-right-bar-bottom {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.right-icon {
+  clip-path: circle(44.7% at 50% 50%);
+  max-width: 35px;
+}
+@media screen and (max-width: 900px) {
+ .profil-right-bar{
+    display: none;
+  }
+
+}

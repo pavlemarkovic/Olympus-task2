@@ -1,0 +1,80 @@
+
+.profil-wallpaper {
+  background-image: url(../../assets/img/profil-wallpaper.jpg);
+  max-width: 1000px;
+  height: 450px;
+ 
+}
+.three-icon {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -28px;
+  margin-right: 20px;
+}
+.three-icon-img {
+  margin-right: 3px;
+}
+
+.center-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 900px) {
+  .page{
+    display: none;
+  }
+  .profil-search{
+    display: none;
+
+  }
+  .find{
+    display: none;
+  }
+  .profil-left-bar{
+    display: none;
+  }  
+  .profil-right-bar{
+    display: none;
+  }
+  .profil-head{
+    display: none;
+  }
+  .profil-name-surname{
+    display: none;
+  }
+.badplay{
+  display: none
+}
+.grid-poll{
+  display: none;
+}
+.three-icon{
+  justify-content: center;
+}
+.profil-info{
+  flex-wrap: wrap;
+}
+.status{
+  margin: 0 auto;
+}
+.profil-wallpaper{
+  max-width: 800px;
+
+}
+.center-profil{
+  margin-top: 0;  
+}
+.chat{
+  display: block;
+}
+
+}
+@media screen and (max-width: 600px) {
+  .profil-wallpaper{
+    max-width: 550px;
+  }
+  .center-content{
+    display: block;
+  }
+}

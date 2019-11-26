@@ -1,0 +1,35 @@
+﻿<div class="home-content">
+<div >
+
+        <app-profil-header></app-profil-header>  
+        </div>
+          
+          <div class="profil-content">
+        
+            <div>
+        <app-profil-leftbar></app-profil-leftbar>
+        </div>
+            <div class="profil-center">
+              <div class="containter">
+                <div class="row">
+                
+                  
+                    <app-profil-center></app-profil-center>
+                  </div>
+              </div>
+            </div>
+        
+        <app-profil-rightbar></app-profil-rightbar>
+            
+          </div>
+        
+
+
+
+<ul>
+    <li *ngFor="let user of users">
+        {{user.username}} ({{user.firstName}} {{user.lastName}})
+        - <a (click)="deleteUser(user.id)" class="text-danger">Delete</a>
+    </li>
+</ul>
+</div>

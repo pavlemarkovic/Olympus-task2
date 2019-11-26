@@ -1,0 +1,75 @@
+<div class="login-content">
+ 
+    <div>
+        <app-logo></app-logo>
+      </div>
+  <div class="container">
+    <div class="row">
+      
+    
+
+      <div class="lpage">
+        <div class="left">
+          <app-leftside></app-leftside>
+        </div>
+
+        <div class="right">
+          <div class="icons-btn">
+          <a routerLink="/register" class="btn btn-link"><img src="../../assets/img/turn-off.svg" class="icon-reg"></a>
+          <a routerLink="/login" class="btn btn-link"><img src="../../assets/img/lock.svg"class="icon-reg"></a>
+        </div>
+        <div class="text-log">
+            <p>Login to your Account</p>
+          </div>
+          <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="login-form">
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" formControlName="username" class="form-control1"
+                [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+              <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                <div *ngIf="f.username.errors.required">Username is required</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" formControlName="password" class="form-control1"
+                [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+              <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                <div *ngIf="f.password.errors.required">Password is required</div>
+              </div>
+            </div>
+            <div class="remember">
+                <input type="checkbox" name="checkbox" value="check" /> Remember Me
+              </div>
+              <div>
+                <p class="forgot"><a href="#">Forgot Password?</a></p>
+              </div>
+            <div class="form-group">
+              <button [disabled]="loading" class="btn btn-primary log">
+                <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                Login
+              </button>
+              
+
+            </div>
+          </form>
+          <div class="or">
+              <hr> or
+              <hr>
+            </div>
+          <div class="facebook"><img src="../../assets/img/facebook.png" class="button-icon"> <a href="https://en-gb.facebook.com/login/"
+            target="_blank"> Login whit Facebook</a>
+        </div>
+        <div class="twiter"> <img src="../../assets/img/tviter.png" class="button-icon"> <a href="https://twitter.com/login/"
+            target="_blank">Login whit Twitter</a>
+        </div>
+        <div class="dont-have">
+          <p> Don't you have an account? <span style="color: red;"><a routerLink="/register" class="regnow">Register
+                Now!</a> </span> it's a really simple and you can start enjoing all the benefits!
+          </p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

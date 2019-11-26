@@ -1,0 +1,48 @@
+
+.badplay {
+  display: flex;
+  flex-direction: column;
+}
+
+/* badges */
+
+.badges {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #fff;
+  width: 240px;
+}
+.badges-text {
+  padding: 15px;
+  border-bottom: 1px solid #dcd2d2;
+}
+.badges-1row {
+  display: flex;
+  justify-content: space-around;
+}
+.badges-2row {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* play */
+.playlist {
+  margin-top: 10px;
+  background: #fff;
+  padding: 10px;
+  display: flex;
+    flex-direction: column;
+    max-width: 239px;
+
+}
+.play-text {
+  padding: 15px;
+  border-bottom: 1px solid #dcd2d2;
+}
+@media screen and (max-width: 900px) {
+ .badplay, .grid-poll {
+    display: none;
+  }
+}

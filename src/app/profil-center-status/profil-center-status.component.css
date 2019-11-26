@@ -1,0 +1,82 @@
+
+.status1 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px 20px;
+  background-color: #fff;
+  position: relative;
+}
+.status-head-img{
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+.status-head{
+  clip-path: circle(52.7% at 53% 48%);
+  width: 42px;
+}
+.mini-profil-img{
+max-width: 46px;
+}
+.status-name{
+  margin-left: 10px;
+}
+.statusicon {
+  margin-left: -18px;
+  margin-top: 12px;
+}
+.status-text{
+  padding: 10px;
+  font-size: 14px;
+}
+.picinub{
+  display: flex;
+}
+
+.like{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px solid #dcd2d2;
+}
+.like-left{
+  display: flex;
+  align-items: center;
+}
+.like-img{
+  clip-path: circle(41.7% at 54% 45%);
+  width: 37px;
+  margin-right: -20px;
+}
+.like-name{
+  font-size: 10px;
+    max-width: 85px;
+    margin-left: 38px;
+}
+.like-right{
+  display: flex;
+  align-items: center;
+}
+.status2 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px 20px;
+  background-color: #fff;
+  position: relative;
+}
+.diana{
+  padding: 10px;
+}
+
+.like-top{
+  position: absolute;
+    right: -14px;
+}
+.more-status{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
